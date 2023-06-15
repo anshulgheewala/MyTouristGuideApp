@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rl2"
+        android:layout_height="wrap_content">
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/mytoutv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="#38B6FF"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:text="My Tourist Guide"-->
+<!--            android:textSize="30dp">-->
+
+<!--        </TextView>-->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#3BF"
+            android:layout_below="@id/mytoutv"
+            android:id="@+id/rl"
+            android:layout_height="match_parent">
+
+
+            <ViewFlipper
+                android:id="@+id/vf"
+                android:layout_width="370dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                android:paddingBottom="15dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_ahmedabad1">
+
+                </ImageView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_gandhinagar"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_dwarka"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_junagadh"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_kutch"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_mehsana"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_narmada"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_patan"></ImageView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/updated_vadodra1"></ImageView>
+
+
+            </ViewFlipper>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/rl"
+                android:layout_gravity="center"
+                android:text="Top Cities in Gujarat"
+                android:textSize="25dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/editSearchbox"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:hint="Enter City Name Here..."
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

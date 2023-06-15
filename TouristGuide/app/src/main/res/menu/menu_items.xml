@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item app:showAsAction="always"
+        android:icon="@drawable/three_dots"
+        android:title="">
+
+        <menu>
+            <item
+                android:title="Requent for city"
+                app:showAsAction="never"
+                android:id="@+id/route"
+                android:icon="@drawable/ic_baseline_arrow_circle_up_24">
+            </item>
+            <item
+                android:title="About Us"
+                app:showAsAction="never"
+                android:id="@+id/aboutus"
+                android:icon="@drawable/info">
+            </item>
+
+            <item
+                android:title="Exit"
+                app:showAsAction="never"
+                android:id="@+id/exit"
+                android:icon="@drawable/exit">
+            </item>
+        </menu>
+
+    </item>
+
+</menu>

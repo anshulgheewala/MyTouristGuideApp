@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LastItem">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/mytoutv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#38B6FF"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="My Tourist Guide"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mytoutv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:text="Hotel Novotel"
+            android:textSize="30dp">
+
+
+        </TextView>
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/vf"
+            android:flipInterval="3000"
+            android:autoStart="true"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right"
+            android:layout_below="@id/tv">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/img2"
+                android:layout_below="@+id/tv"
+                android:layout_marginTop="30dp"
+                android:src="@color/common_google_signin_btn_text_dark_focused">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv"
+                android:id="@+id/img3"
+                android:layout_marginTop="30dp"
+                android:src="@color/common_google_signin_btn_text_dark_focused">
+
+            </ImageView>
+
+
+
+
+        </ViewFlipper>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:justificationMode="inter_word"
+            android:text="Featuring floor to ceiling windows, an open air swimming pool and spacious modern rooms, Novotel Ahmedabad is located on S G Highway. Free Wi-Fi is available throughout. The Square, the in-house all day dining buffet restaurant serves Indian, Continental and Chinese fare. Room service can be requested for in-room dining comforts. Business Lounge can be accessed if booked on Deluxe room or above for complimentary tea/coffee and snacks. Hotel has The Liquor shop is open now. Hotel is a 21 km away from Sardar Vallabhai Patel International Airport. The Sanand industrial belt is located 16 km from Novotel Ahmedabad. Air-conditioned rooms will provide you with a flat-screen satellite TV, an electric kettle and a minibar. The attached bathrooms are equipped with a shower, hairdryer and free toiletries. Novotel Ahmedabad offers a fitness center and operates a 24-hour front desk to assist guests at all hours. Other facilities offered at the property include luggage storage and dry cleaning"
+            android:textSize="19dp"></TextView>
+
+        <TextView
+            android:id="@+id/features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Images"
+            android:textSize="22dp"></TextView>
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/features"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="20dp"
+            android:src="@color/common_google_signin_btn_text_dark_focused"></ImageView>
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/iv2"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Location "-->
+<!--            android:textSize="22dp"></TextView>-->
+
+
+
+
+<!--        <Button-->
+<!--            android:id="@+id/aaa"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/tv4"-->
+<!--            android:text="Click Here For Location"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:layout_centerInParent="true"></Button>-->
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/for_booking"-->
+<!--            android:layout_below="@+id/aaa"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:text="For Bookings Click Below "-->
+<!--            android:textSize="22dp"-->
+<!--            android:layout_centerHorizontal="true">-->
+<!--        </TextView>-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/goibibo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/for_booking"-->
+<!--            android:text="GOIBIBO"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_centerInParent="true"></Button>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/tripadvisor"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/goibibo"-->
+<!--            android:text="TRIPADVISOR"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_centerInParent="true"></Button>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/makemytrip"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/tripadvisor"-->
+<!--            android:text="MAKE MY TRIP"-->
+<!--            android:layout_marginBottom="50dp"-->
+<!--            android:layout_centerInParent="true"></Button>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
